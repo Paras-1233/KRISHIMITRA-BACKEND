@@ -3,8 +3,8 @@ import PDFDocument from 'pdfkit';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import Product from '../models/Product.js';
-import Order from '../models/Order.js';
+import Product from '../models/product.js';
+import Order from '../models/order.js';
 
 const router = express.Router();
 const __filename = fileURLToPath(import.meta.url);

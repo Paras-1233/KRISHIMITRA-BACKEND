@@ -1,7 +1,7 @@
 import express from "express";
-import Order from "../models/Order.js";
-import Cart from "../models/Cart.js";
-import Product from "../models/Product.js"; // Make sure this exists
+import Order from "../models/order.js";
+import Cart from "../models/cart.js";
+import Product from "../models/product.js"; // Make sure this exists
 
 const router = express.Router();
 
