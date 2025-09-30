@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+// src/models/Cart.js
+import mongoose from 'mongoose';
 
 const cartItemSchema = new mongoose.Schema({
   product: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
@@ -10,4 +11,5 @@ const cartSchema = new mongoose.Schema({
   items: [cartItemSchema],
 }, { timestamps: true });
 
-module.exports = mongoose.model('Cart', cartSchema);
+// ✅ Export as default for ES module compatibility
+export default mongoose.model('Cart', cartSchema);
